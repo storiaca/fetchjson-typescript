@@ -3,7 +3,7 @@ let speed: string = "fast";
 let hasName: boolean = true;
 
 let nothingMuch: null = null;
-let nothing: undfined = undefined;
+let nothing: undefined = undefined;
 
 // bulid in objects
 let now: Date = new Date();
@@ -27,3 +27,9 @@ let point: { x: number; y: number } = {
 const logNubmer: (i: number) => void = (i: number) => {
   console.log(i);
 };
+
+// When to use annotations
+// 1) Function that returns the 'any' type
+const json = '{"x": 10, "y": 20}';
+const coordinates = JSON.parse(json);
+console.log(coordinates); // {x: 10, y: 20}
