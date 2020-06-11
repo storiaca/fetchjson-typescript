@@ -3,7 +3,7 @@ let speed: string = "fast";
 let hasName: boolean = true;
 
 let nothingMuch: null = null;
-let nothing: undefined = undefined;
+let nothing: undfined = undefined;
 
 // bulid in objects
 let now: Date = new Date();
@@ -21,4 +21,9 @@ let car: Car = new Car();
 let point: { x: number; y: number } = {
   x: 10,
   y: 20,
+};
+
+// Function
+const logNubmer: (i: number) => void = (i: number) => {
+  console.log(i);
 };
